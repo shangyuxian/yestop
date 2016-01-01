@@ -1,6 +1,6 @@
 ﻿/*!
 * YesTop(jQuery GoToTop)
-* version: 1.0.0
+* version: 1.1.0
 * Copyright (c) 2015 HoverTree
 * http://hovertree.com
 * http://hovertree.com/texiao/yestop/
@@ -23,7 +23,12 @@
             yes_title: "Go Top",
             yes_opacity: "0.8",
             yes_hoverOpacity:"1",
-            yes_radius:"0%"
+            yes_radius: "0%",
+            yes_html: "",
+            yes_hoverHtml: "",
+            yes_fontSize:"12px",
+            yes_lineHeight: "48px",
+            yes_backColor: "transparent"
         }, options);
 
         settings.yes_image = "url(" + settings.yes_image + ")";
@@ -42,10 +47,21 @@
         }
 
         h_yesObj.css({
-            "width": settings.yes_width, "height": settings.yes_height, "cursor": "pointer","border-radius": settings.yes_radius
+            "width": settings.yes_width, "height": settings.yes_height
+            , "cursor": "pointer", "border-radius": settings.yes_radius
             , "position": settings.yes_position 
             , "opacity": settings.yes_opacity, "background-image": settings.yes_image
+            , "text-align": "center", "line-height": settings.yes_lineHeight
+            ,"background-color":settings.yes_backColor,"font-size":settings.yes_fontSize
         })
+
+        if (settings.yes_html != "")
+        { h_yesObj.html(settings.yes_html) }
+
+        if (settings.yes_hoverHtml != "")
+        {
+            h_yesObj.hover(function () { h_yesObj.html(settings.yes_hoverHtml) }, function () { h_yesObj.html(settings.yes_html) })
+        }
 
         if (settings.yes_position == "fixed") {
             if (settings.yes_top == "") {

@@ -32,5 +32,5 @@
   "name": "yestop",
   "repository": { "type": "git",
     "url": "https://github.com/shangyuxian/yestop"},
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
