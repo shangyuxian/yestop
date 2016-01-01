@@ -1,6 +1,6 @@
 ﻿/*!
 * YesTop(jQuery GoToTop)
-* version: 1.1.0
+* version: 1.1.2
 * Copyright (c) 2015 HoverTree
 * http://hovertree.com
 * http://hovertree.com/texiao/yestop/
