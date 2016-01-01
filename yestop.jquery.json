@@ -1,0 +1,36 @@
+﻿{
+"name": "yestop",
+"title": "Yestop jQuery Go To Top",
+"description": "A distinctive jQuery plugin.Very simple to use.",
+"keywords": [
+"yestop",
+"hovertree",
+"UI",
+"jquery",
+"jquery-plugin"
+],
+ "version": "1.0.0",
+ "author": {
+"name": "HoverTree",
+"url": "http://hovertree.com"
+},
+"maintainers": [
+{
+"name": "HoverTree",
+"url": "http://hovertree.com"
+}
+],
+"licenses": [
+{
+"type": "MIT",
+"url": "http://hovertree.com/texiao/yestop/license.htm"
+}
+],
+"homepage": "http://hovertree.com/texiao/yestop/",
+"docs": "http://hovertree.com/texiao/yestop/",
+"download": "http://hovertree.com/h/bjaf/topimage.htm",
+"demo": "http://hovertree.com/texiao/yestop/",
+"dependencies": {
+"jquery": ">=1.9"
+}
+}
